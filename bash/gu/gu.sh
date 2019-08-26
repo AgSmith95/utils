@@ -11,6 +11,9 @@ then
   pat+="[^/]*/\)"
   dir=$(expr match "$(pwd)" $pat)
   cd "$dir"
-else 
-  echo "Bad argument " $1
+elif [[ "$#" -eq 0 ]]
+then
+  cd ..
+else
+  echo "bad argument $1"
 fi
