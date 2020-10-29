@@ -18,5 +18,6 @@ set horizontal-scroll-mode Off
 "\e\177": backward-kill-word # Alt-backspace to kill word
 #"\e\b": backward-kill-word # if previous doesn't work
 "^L": clear-screen
+#"\f": clear-screen # if above doesn't work
 "\C-H": backward-kill-word
 "\A-H": backward-kill-word
