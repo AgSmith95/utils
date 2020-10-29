@@ -1,0 +1,22 @@
+# Allow the command prompt to wrap to the next line
+set horizontal-scroll-mode Off
+
+# history search
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+
+# mappings for Ctrl-left-arrow and Ctrl-right-arrow for word moving
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\e[3~": delete-char
+"\e\177": backward-kill-word # Alt-backspace to kill word
+#"\e\b": backward-kill-word # if previous doesn't work
+"^L": clear-screen
+"\C-H": backward-kill-word
+"\A-H": backward-kill-word
